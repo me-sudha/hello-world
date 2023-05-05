@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 60%;
+        padding: 0px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Sudha Shrestha</h1>
+      <p>Welcome on my website.</p>
+    </div>
+
+    <div class="topnav">
+      <a href="home.html">Home</a>
+      <a href="#">Biodata</a>
+     </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="section">
+            <h1>Name</h1>
+            <p> Sudha Shrestha <br> sudhashrestha503@gmail.com <br> +977 9843711600 <br> Imadol, Mahalaxmi-01, <br>Lalitpur, Nepal.</p>
+          </div>
+          <div class="section">
+            <h2>Summary</h2>
+            <p>As a student of Bachelor's degree in Computer Applications, I have a solid foundation in computer science principles and a passion for technology. I have gained experience in several programming languages such as C, C++, Java, Python and developed proficiency in web development using HTML, CSS and JavaScript. I have also experience in database management using MySQL and MongoDB. I am always looking for new challenges and opportunities to expand my knowledge and skills. I have completed several projects during my academic tenure and have experience in working with a team to deliver projects on time. I am also a quick learner and have the ability to work independently. I am seeking an internship opportunity to gain more hands-on experience in web development and work with professionals in the field.</p>
+            </div>
+          <div class="section">
+            <h2>Education</h2>
+            <h3>BCA- Citizen College</h3>
+            <h4>Affilited to Pokhara University</h4>
+            <p>Dates of attendance: September 2019 - May 2023</p>
+            <p>Major: Computer Applications</p>
+            <p>GPA: 3.5/4.0</p>
+            <h3>10+2 - United Academy</h3>
+            <p>Dates of attendance: September 2017 - May 2019</p>
+            <p>Major: Bio - Science</p>
+            <p>GPA: 2.73/4.0</p>
+            <h3>SEE - Mahendra Adarsa MA.Vi.</h3>
+            <p>Dates of attendance: September 2007 - May 2017</p>
+            <p>GPA: 3.25/4.0</p>
+          </div>
+          <div class="section">
+            <h2>Projects and achievements</h2>
+            <ul>
+              <li>Developed a responsive personal portfolio website using HTML, CSS and JavaScript as part of college curriculum</li>
+              <li>Participated in Hackathon and built a web application that won first prize in the event</li>
+              <li>Attended several workshops and seminars on web development, attended a certificate course on Web Development</li>
+            </ul>
+            </div>
+          <div class="section">
+            <h2>Skills</h2>
+            <ul>
+              <li>Expertise in HTML, CSS, and JavaScript</li>
+              <li>Proficient in programming languages such as Java, Python and C++</li>
+              <li>Familiarity with web development frameworks such as React and Angular</li>
+              <li>Experience with Git and version control</li>
+              <li>Understanding of Agile development methodologies and practices</li>
+              <li> Strong Communication skills, ability to work well in a team, attention to detail, problem-solving abilities </li>
+            </ul>
+          </div>
+        </div>
+              </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height: 100px"><img src=".//images/IMG_6906.JPG" height="100%" width="100%" alt=""></div>
+          <p>I am a passionate and experienced technical professional with a background in [specific field, e.g. software development, data science]. I have a strong track record of delivering results and drive to stay up-to-date with the latest technologies. I am committed to fostering a diverse and inclusive work environment and am dedicated to mentoring and supporting other women in technical fields.</p>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <a href="https://www.facebook.com/sudha.shrestha.12979" > Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <div>
+          <p>Copyright © 2022 sudhashrestha</p>
+        </div>
+        <div>
+          <a href="#top">Back to top</a>
+        </div>
+        </footer>
+      
+    </div>
+  </body>
+</html>

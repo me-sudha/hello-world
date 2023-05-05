@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 60%;
+        padding: 0px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Sudha Shrestha</h1>
+      <p>Welcome on my website.</p>
+    </div>
+
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="biodata.html">Biodata</a>
+       </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>HTML</h2>
+          <h5>Jan 11, 2023</h5>
+          <div class="fakeimg" style="height: 200px"><img src="/my-website/images/html.jpg" height="100%" width="100%" alt=""></div>
+            <p>HTML, which stands for Hypertext Markup Language, is the standard markup language used to create web pages. It is the backbone of web development, and allows developers to structure and present content in a logical and organized manner</p>
+        </div>
+        <div class="card">
+          <h2>CSS</h2>
+          <h5>Jan 12, 2023</h5>
+          <div class="fakeimg" style="height: 200px"><img src=".//images/java.jpeg" height="100%" width="100%" alt=""></div>
+          <p>CSS, which stands for Cascading Style Sheets, is a styling language used to control the layout and presentation of web pages. It is used alongside HTML and JavaScript to create visually appealing and user-friendly websites.
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height: 100px"><img src="./images/IMG_6906.JPG" height="100%" width="100%" alt=""></div>
+            <p>I am a passionate and experienced technical professional with a background in [specific field, e.g. software development, data science]. I have a strong track record of delivering results and drive to stay up-to-date with the latest technologies. I am committed to fostering a diverse and inclusive work environment and am dedicated to mentoring and supporting other women in technical fields.</p>
+        </div>
+       
+        <div class="card">
+          <h3>Follow Me</h3>
+            <a href="https://www.facebook.com/sudha.shrestha.12979" > Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <div>
+          <p>Copyright © 2022 sudhashrestha</p>
+        </div>
+        <div>
+          <a href="#top">Back to top</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
